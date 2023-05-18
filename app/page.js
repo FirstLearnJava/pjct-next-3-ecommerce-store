@@ -1,6 +1,6 @@
 // import Image from 'next/image';
 import GenerateButton from './GenerateButton';
-import carrots from '../public/carrots.jpg';
+import carrot from '../public/images/carrot.jpg';
 import Image from 'next/image';
 import styles from './StyleImages.module.scss';
 
@@ -10,7 +10,7 @@ export default function HomePage() {
       <main>This is my Homepage.</main>
       <GenerateButton />
       <Image
-        src={carrots}
+        src={carrot}
         alt="a bunch of carrots"
         className={styles.StyleImages}
       />

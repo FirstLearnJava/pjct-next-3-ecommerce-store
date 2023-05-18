@@ -4,6 +4,9 @@ dependencies:
   next:
     specifier: 13.4.2
     version: 13.4.2(@babel/core@7.21.8)(react-dom@18.2.0)(react@18.2.0)(sass@1.62.1)
+  next-app:
+    specifier: ^0.0.0
+    version: 0.0.0
   randomcolor:
     specifier: ^0.6.2
     version: 0.6.2
@@ -2669,6 +2672,10 @@ packages:
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
+
+  /next-app@0.0.0:
+    resolution: {integrity: sha512-vBpHtHZ8mzS+Ul90YVXYBdbBU3v5Ej//Vap8MVCzVBIreHQmaeT60kvqwJVZQ+reFSmU18fAhvC0xMkafWn//Q==}
+    dev: false
 
   /next@13.4.2(@babel/core@7.21.8)(react-dom@18.2.0)(react@18.2.0)(sass@1.62.1):
     resolution: {integrity: sha512-aNFqLs3a3nTGvLWlO9SUhCuMUHVPSFQC0+tDNGAsDXqx+WJDFSbvc233gOJ5H19SBc7nw36A9LwQepOJ2u/8Kg==}
