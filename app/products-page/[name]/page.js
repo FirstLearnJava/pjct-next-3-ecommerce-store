@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { getProductByName } from '../../database/page';
 import { notFound } from 'next/navigation';
 
@@ -19,7 +18,6 @@ export default function DynamicPage({ params }) {
         This is a {singleProduct.name} it is {singleProduct.taste}.
       </h1>
       <br />
-      <Image src={`/images/${params.name}.jpg`} width={200} height={200} />
     </div>
   );
 }

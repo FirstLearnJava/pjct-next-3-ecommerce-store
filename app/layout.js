@@ -1,6 +1,7 @@
 import './globals.scss';
 // import { Inter } from 'next/font/google';
 import Link from 'next/link';
+import styles from './navigator.module.scss';
 
 // export const metadata = {
 //   title: { default: 'Next Example | UpLeveled', template: '%s | UpLeveled' },
@@ -9,8 +10,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: {
-    default:
-      "Agricultural products from your regional farmer | Zum Bauern z'Huber",
+    default: "Your regional farmer | Zum Bauern z'Huber",
     template: " %s | Zum Bauern z'Huber",
   },
   description:
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <nav>
+        <nav className={styles.navigator}>
           <Link href="/">home</Link>
           <br />
           <Link href="/products-page">products</Link>

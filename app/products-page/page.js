@@ -1,6 +1,7 @@
 // import { name } from './../../.next/server/app/page';
 import Image from 'next/image';
 import Link from 'next/link';
+import styles from '../products-page.module.scss';
 const products = [
   {
     id: 1,
@@ -25,13 +26,16 @@ const products = [
 
 export default function VegetablesPage() {
   return (
-    <main>
+    <main className={styles.centerProductsPage}>
+      <br />
       This is my products page.
+      <br />
       <br />
       This are some of our products:
       {products.map((product) => {
         return (
           <div key={`product-id: ${product.id}`}>
+            <br />
             We sell {product.type}, for example{' '}
             <Link href={`/products-page/${product.name}`}>{product.name}</Link>.
             <br />

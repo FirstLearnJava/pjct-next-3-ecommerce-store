@@ -6,7 +6,7 @@ export const rootNotFoundMetadata = {
 export default function RootNotFound() {
   return (
     <div>
-      Sorry this page was not found make sure you visit a page that exists
+      Sorry this page was not found make sure you visit a page that exists.
     </div>
   );
 }
