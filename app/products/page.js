@@ -11,7 +11,7 @@ export default function ProductsPage() {
       <div className={styles.vegetablesFlexbox}>
         {vegetables.map((vegetable) => {
           return (
-            <div key={`fruit-id:${vegetable.id}`}>
+            <div key={`vegetable-id:${vegetable.id}`}>
               <Link href={`/products/${vegetable.id}`}>{vegetable.name}</Link>
               <Link
                 href={`/products/${vegetable.id}`}
