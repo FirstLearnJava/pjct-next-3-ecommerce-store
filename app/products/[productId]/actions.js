@@ -28,19 +28,7 @@ export async function createOrUpdateQuantity(productId, quantity) {
   await cookies().set('productCookies', JSON.stringify(productQuantities));
 }
 
-export async function getCartCookies() {
-  const cartCookies = await JSON.parse(cookies().get('productCookies'));
-
-  return cartCookies;
-
-  //   <div>
-  //     {cartCookies.map((cartCookie) => {
-  //       return (
-  //         <div key={`cartCookie-id:${cartCookie.id}`}>
-  //           {cartCookie.quantity}
-  //         </div>
-  //       );
-  //     })}
-  //   </div>
-  // );
+export async function deleteCookie(cookieArray) {
+  // 'use server';
+  await cookies().set('productCookies', JSON.stringify(cookieArray));
 }

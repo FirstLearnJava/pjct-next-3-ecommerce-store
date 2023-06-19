@@ -2,9 +2,11 @@
 
 import { useState } from 'react';
 import { createOrUpdateQuantity } from './actions';
+import { useRouter } from 'next/navigation';
 
 export default function ProductQuantityForm(props) {
   const [quantity, setQuantity] = useState(1);
+  const router = useRouter();
   return (
     <form>
       <textarea
@@ -15,10 +17,11 @@ export default function ProductQuantityForm(props) {
       />
       <button
         formAction={async () => {
+          router.refresh();
           await createOrUpdateQuantity(props.productId, quantity);
         }}
       >
-        Create or Update Comment
+        Create or Update Quantity
       </button>
     </form>
   );
